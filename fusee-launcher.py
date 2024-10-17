@@ -725,7 +725,7 @@ with open("intermezzo_patched.bin", "wb") as f:
 # Prefix the image with an RCM command, so it winds up loaded into memory
 # at the right location (0x40010000).
 
-RCM_HEADER_SIZE = RCM_V1_HEADER_SIZE
+RCM_HEADER_SIZE = RCM_V4P_HEADER_SIZE
 
 # Use the maximum length accepted by RCM, so we can transmit as much payload as
 # we want; we'll take over before we get to the end.
